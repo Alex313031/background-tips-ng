@@ -2,7 +2,7 @@
   "name": "background-tips",
   "main": "./lib/background-tips",
   "version": "0.28.2",
-  "authorsd": "Alex313031",
+  "author": "Alex313031 <Alex313031@gmail.com>",
   "description": "Displays tips about Atom-ng in the background when there are no editors open.",
   "repository": "https://github.com/Alex313031/background-tips-ng",
   "license": "MIT",
