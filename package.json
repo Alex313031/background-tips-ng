@@ -1,13 +1,18 @@
 {
   "name": "background-tips",
   "main": "./lib/background-tips",
-  "version": "0.28.1",
+  "version": "0.28.2",
   "authorsd": "Alex313031",
   "description": "Displays tips about Atom-ng in the background when there are no editors open.",
   "repository": "https://github.com/Alex313031/background-tips-ng",
   "license": "MIT",
   "engines": {
     "atom": ">0.42.0"
+  },
+  "scripts": {
+    "test": "atom --test spec",
+    "clean": "rm -r -f -v node_modules",
+    "build": "NODE_ENV=production npm install"
   },
   "dependencies": {
     "underscore-plus": "^1.7.0"
