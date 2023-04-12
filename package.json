@@ -12,7 +12,7 @@
   "scripts": {
     "test": "atom --test spec",
     "clean": "shx rm -rf -v node_modules",
-    "build": "npm install && cross-env NODE_ENV=production npm install"
+    "build": "npm install && npm run clean && npm --production install"
   },
   "dependencies": {
     "underscore-plus": "^1.7.0"
