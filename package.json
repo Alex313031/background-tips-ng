@@ -11,13 +11,15 @@
   },
   "scripts": {
     "test": "atom --test spec",
-    "clean": "rm -r -f -v node_modules",
-    "build": "NODE_ENV=production npm install"
+    "clean": "shx rm -rf -v node_modules",
+    "build": "npm install && cross-env NODE_ENV=production npm install"
   },
   "dependencies": {
     "underscore-plus": "^1.7.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "shx": "^0.3.4",
     "standard": "^11.0.1"
   },
   "standard": {
