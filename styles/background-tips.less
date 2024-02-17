@@ -3,8 +3,15 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
-@import "octicons";
-@import "octicons-mixins";
+
+.octicon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: auto;
+  height: 50px !important;
+  font-size: 50px !important;
+}
 
 background-tips {
   display: block;
@@ -19,15 +26,6 @@ background-tips {
   .background-message {
     user-select: none;
     cursor: default;
-
-  .icon-large::before {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    width: auto;
-    height: 18em;
-    font-size: 18em !important;
-  }
 
     .message {
       padding: 0 @component-padding*3;
